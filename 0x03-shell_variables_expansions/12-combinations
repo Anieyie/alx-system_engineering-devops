@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo {a...z} {a...z} | tr ' ' 'ln' | grep -v "oo"
