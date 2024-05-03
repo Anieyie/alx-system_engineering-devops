@@ -9,7 +9,6 @@
  *
  * Return: Always 0.
  */
-
 int infinite_while(void)
 {
 	while (1)
@@ -20,11 +19,10 @@ int infinite_while(void)
 }
 
 /**
- * main - Creates five zombies.
+ * main - Creates five zombie processes.
  *
  * Return: Always 0.
  */
-
 int main(void)
 {
 	pid_t pid;
