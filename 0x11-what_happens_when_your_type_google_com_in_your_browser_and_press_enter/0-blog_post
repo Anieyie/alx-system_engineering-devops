@@ -1,0 +1,54 @@
+### What Happens When You Type https://www.google.com in Your 
+### Browser and Press Enter
+Ever wondered what happens behind the scenes when you type a 
+web address into your browser and hit Enter? It’s a fascinating 
+process involving many steps and technologies working together 
+to bring a web page to your screen.
+#### DNS Request
+When you type `https://www.google.com`, your browser needs to 
+find the IP address associated with the domain. It first checks 
+its cache, then your operating system's cache, and if 
+necessary, queries your local router and ISP. If the IP address 
+is not found, the ISP’s DNS server will perform a broader 
+search across other DNS servers until it locates the correct 
+address.
+#### TCP/IP Connection
+With the IP address in hand, your browser establishes a 
+connection to the server using the Transmission Control 
+Protocol (TCP) over the Internet Protocol (IP). This involves a 
+handshake process where your browser and the server exchange 
+packets to agree on communication terms.
+#### Security Checks: Firewalls and HTTPS/SSL
+As data travels, it passes through firewalls that ensure 
+malicious traffic doesn’t get through. Since the URL uses 
+HTTPS, your connection is secured with SSL/TLS encryption, 
+ensuring your data remains private and secure.
+#### Load Balancer
+For large websites like Google, handling millions of users 
+requires multiple servers. Load balancers distribute incoming 
+traffic across these servers, ensuring no single server is 
+overwhelmed and you get a quick response.
+#### Web Server and Application Server
+Your request first reaches a web server. If it's for static 
+content, the web server handles it. For more complex requests 
+like search queries, the web server passes the request to an 
+application server, which processes it and interacts with other 
+services and databases as needed.
+#### Database Interaction
+For dynamic content, the application server queries a database. 
+The database retrieves the relevant data and sends it back to 
+the application server, which prepares the response.
+#### Response Delivery
+The application server sends the response to the web server, 
+which forwards it through the load balancer and firewalls back 
+to your browser.
+#### Browser Rendering
+Your browser receives the response, parses the HTML, applies 
+CSS, executes JavaScript, and finally renders the page, 
+allowing you to see and interact with it.
+### Conclusion
+From typing a URL to seeing a web page, numerous components and 
+protocols work in harmony, showcasing the complexity and 
+efficiency of the web. This journey highlights how data travels 
+across the globe in mere milliseconds to bring information to 
+your fingertips.
